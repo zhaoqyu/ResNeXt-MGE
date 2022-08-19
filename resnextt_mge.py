@@ -185,7 +185,7 @@ import megengine.hub as hub
 
 
 @hub.pretrained(
-    'https://studio.brainpp.com/api/v1/activities/3/missions/106/files/fad35756-a2ac-4c7a-94e5-888332c8ed69'
+    'https://studio.brainpp.com/api/v1/activities/3/missions/106/files/d1e3089c-3113-4392-a2bb-ebca4183ce8a'
 )
 def resnext50_32x4d():
     return ResNeXt(Bottleneck, [3, 4, 6, 3], groups=32, width_per_group=4)
