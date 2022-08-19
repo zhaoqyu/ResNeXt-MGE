@@ -1,0 +1,1 @@
+from resnextt_mge import resnext50_32x4d
