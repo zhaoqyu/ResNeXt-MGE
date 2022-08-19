@@ -1,14 +1,14 @@
-# Wide-Residual-Networks-MegEngine
-Wide Residual Networks (MegEngine implementation）
+# Aggregated Residual Transformations for Deep Neural Networks
+
+RexNeXt (MegEngine implementation）
 
 论文介绍
 
-论文题目：Wide Residual Networks
+论文题目：Aggregated Residual Transformations for Deep Neural Networks
 
-论文链接：https://arxiv.org/abs/1605.07146
+论文链接：https://arxiv.org/abs/1611.05431
 
-对标实现 - official 复现链接：https://github.com/szagoruyko/wide-residual-networks
-
+对标实现 - official 复现链接：https://github.com/facebookresearch/ResNeXt
 ## Usage
 
 Install dependency.
@@ -18,9 +18,6 @@ pip install -r requirements.txt
 ```
 
 Import from megengine.hub:
-
-
-
 ```python
 import megengine as mge
 
@@ -29,9 +26,13 @@ model = mge.hub.load("zhaoqyu/WRN-MegEngine", "wide_resnet50_2", git_host='githu
 print(model)
 ```
 
+ 输出两者的误差
+```bash
+python3 compare.py
+```
 
 
-Wide Residual Networks（WRN）模型的 MegEngine 版 inference 函数，提供了模型的 weight，以及可证明等价对象的脚本（compare.py）。
+RexNeXt模型的 MegEngine 版 inference 函数，提供了模型的 weight，以及可证明等价对象的脚本（compare.py）。
 
 基于旷视天元 MegEngine 框架（限 v1.9.1 及以上版本）；
 
@@ -47,5 +48,5 @@ compare.py 证明了与对标实现之间的等价性：
 
 
 
-python3 compare.py 输出两者的误差
+
 
